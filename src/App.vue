@@ -1,16 +1,22 @@
 <template>
   <h1>{{ title }}</h1>
+  <Modal />
 </template>
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
+import Modal from "./components/Modal.vue";
 
 export default {
   // name is optional
   name: "App",
+  components: {
+    Modal,
+  },
   data() {
     return { title: "My First Vue App :)" };
   },
+  methods: {},
 };
 </script>
 
